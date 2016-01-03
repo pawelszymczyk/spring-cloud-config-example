@@ -14,7 +14,7 @@ public class ConfigurationServiceClientBootstrap {
 
     @Bean
     public ConfigurationServiceClient doSth() {
-        //check only for tests
+        //for tests only
         if (!properties.getEnvironment().equals(Main.environmentFromCommandLine)) {
             throw new IllegalStateException("Environment from ApplicationProperties is different than environment passed through cmd, " +
                     "should be: " + Main.environmentFromCommandLine + " but was: " + properties.getEnvironment());

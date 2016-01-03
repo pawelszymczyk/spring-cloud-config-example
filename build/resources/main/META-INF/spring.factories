@@ -1,0 +1,8 @@
+# Application Listeners
+org.springframework.context.ApplicationListener=\
+pl.pawel.CommandLinePropertiesApplicationListener
+
+
+# Bootstrap components
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+pl.pawel.ConfigurationServiceClientBootstrap

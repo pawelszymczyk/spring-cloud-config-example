@@ -23,9 +23,4 @@ public class Main {
     CommandLinePropertiesApplicationListener commandLinePropertiesApplicationListener() {
         return new CommandLinePropertiesApplicationListener();
     }
-
-    @Bean
-    ApplicationPropertiesHolder applicationPropertiesHolder(ApplicationProperties applicationProperties) {
-        return new ApplicationPropertiesHolder(applicationProperties);
-    }
 }
